@@ -102,7 +102,7 @@ mangoBodyPosition = Lmango.body.position
 console.log(Lmango.r + Lstone.r)
 var distance=dist(stoneBodyPosition.x,stoneBodyPosition.y,mangoBodyPosition.x,mangoBodyPosition.y)
 console.log(distance)
-if (distance<=Lmango.x+Lstone.x) {
+if (distance<=Lmango.r+Lstone.r) {
 Matter.Body.setStatic(Lmango.body,false)
 }
 }
