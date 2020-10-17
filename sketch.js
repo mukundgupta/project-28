@@ -99,10 +99,9 @@ function mouseReleased(){
 function detectCollision(Lstone,Lmango){
   stoneBodyPosition = Lstone.body.position
 mangoBodyPosition = Lmango.body.position
-console.log(Lmango.diameter + Lstone.diameter)
 var distance=dist(stoneBodyPosition.x,stoneBodyPosition.y,mangoBodyPosition.x,mangoBodyPosition.y)
 console.log(distance)
-if (distance<=Lmango.r+Lstone.r) {
+if (distance<=Lmango.diameter+Lstone.diameter) {
 Matter.Body.setStatic(Lmango.body,false)
 }
 }
