@@ -88,6 +88,12 @@ function draw() {
   detectCollision(stone1,mango14);
 }
 
+function keyPressed(){
+    if(keyCode === 32){
+   sling1.attach(stone1.body)
+    }
+}
+
 function mouseDragged(){
 	Matter.Body.setPosition(stone1.body,{x:mouseX,y:mouseY})
 }
